@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>frag - 글 목록</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <!-- 내가 추가함 -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <link href="assets/css/tmp.css" rel="stylesheet" />
+
+    <!-- =======================================================
+  * Template Name: Selecao
+  * Template URL: https://bootstrapmade.com/selecao-bootstrap-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+
+  <body class="">
+    <main class="m-5 main">
+      <section class="area-header">
+        <h4 class="">룸메이트 구인 게시판</h4>
+        <div>
+          <button class="btn btn-dark text-warning">채팅목록</button>
+          <button class="btn btn-dark text-warning">내 글</button>
+          <button class="btn btn-dark text-warning">글쓰기</button>
+        </div>
+      </section>
+
+      <section class="area-board">
+        <!-- @@@@@@@ m 없애기 -->
+
+        <table class="table table-hover text-center">
+          <!-- <thead>
+            <tr>
+              <th>번호</th>
+              <th>제목</th>
+              <th>작성자</th>
+              <th>작성일시</th>
+            </tr>
+          </thead> -->
+          <tbody>
+            <!-- <tr class="table-light" role="button">
+              <td>13</td>
+              <td>
+                <span class="bg-dark rounded-3 px-1 text-white">MY</span>
+                <a href="/hollroom/roommate/detail"> 룸메이트 구해요</a>
+              </td>
+              <td class="text-warning fw-bold">나</td>
+              <td>6.19</td>
+            </tr> -->
+
+            <tr role="button">
+              <!-- <td>22</td> -->
+              <td>
+                <div class="infos">
+                  <div>
+                    <span>산본동</span>
+                    <span>·</span>
+                    <span>10:55</span>
+                  </div>
+                  <div>
+                    <span>&#9825;&nbsp;5</span>
+                    <!-- <span>&nbsp;</span> -->
+                    <span>&#128490;&nbsp;2</span>
+                  </div>
+                </div>
+                <div>
+                  <a href="/hollroom/roommate/detail"> 룸메이트 구해요~ </a>
+                </div>
+                <div>
+                  <p class="info-detail">
+                    동래구 명륜동 | 30대 | 아침형 | 흡연X | 잠버릇X
+                    <br />
+                    소음에 예민X | 하루 1회 청소 | 아침&저녁에 샤워 | 반려동물X
+                  </p>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <img
+                    class="profile-img"
+                    src="/assets/img/services.jpg"
+                    alt=""
+                  />
+                  <span>asdf</span>
+                </div>
+              </td>
+              <!-- <td>
+                <span>10:55</span>
+                <span>&#9825;5</span>
+                <span>&#128490;2</span>
+                <span class="text-warning">10:55</span>
+              </td> -->
+            </tr>
+
+            <tr role="button">
+              <!-- <td>9</td> -->
+              <td>
+                <div class="infos">
+                  <div>
+                    <span>명륜동</span>
+                    <span>·</span>
+                    <span>어제</span>
+                  </div>
+                  <div>
+                    <span>&#9825;&nbsp;10</span>
+                    <!-- <span>&nbsp;</span> -->
+                    <span>&#128490;&nbsp;3</span>
+                  </div>
+                </div>
+                <div>
+                  <a href="/hollroom/roommate/detail"> 룸메이트 구해용 </a>
+                  <p class="info-detail">
+                    동래구 명륜동 | 20대 | 저녁형 | 흡연O | 코골이&잠꼬대&이갈이
+                    <br />
+                    소음에 약간 예민 | 주 2회 청소 | 아침에 샤워 | 반려동물X
+                  </p>
+                </div>
+              </td>
+              <td>
+                <div>
+                  <img
+                    class="profile-img"
+                    src="/assets/img/working-1.jpg"
+                    alt=""
+                  />
+                  <span>zzzzwww</span>
+                </div>
+              </td>
+              <!-- <td>
+                <span>어제</span>
+                <span>&#9825;10</span>
+                <span>&#128490;3</span>
+              </td> -->
+            </tr>
+            <!-- <th:block th:each="board:${boardlist}">
+              <tr>
+                <td th:text="${board.roommate_id}"></td>
+                <td>
+                  <a
+                    th:text="${board.title}"
+                    th:href="@{/roommate/detail(roommate_id=${board.roommate_id})}"
+                    class="my-paging-a"
+                  >
+                  </a>
+                </td>
+                <td th:text="${board.user_nickname}"></td>
+                <td
+                  th:text="${#dates.format(board.created_at,'MM-dd')}"
+                ></td>
+              </tr>
+            </th:block> -->
+          </tbody>
+        </table>
+
+        <div class="pagination">
+          <ul role="navigation" aria-label="Pagination">
+            <li class="previous disabled">
+              <a
+                class=""
+                tabindex="-1"
+                role="button"
+                aria-disabled="true"
+                aria-label="Previous page"
+                rel="prev"
+              >
+                <img
+                  src="/assets/img/prev-page-btn.png"
+                  alt="페이지 이전 버튼"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                class="selected"
+                role="button"
+                tabindex="-1"
+                aria-label="Page 1 is your current page"
+                aria-current="page"
+                >1</a
+              >
+            </li>
+            <li><a role="button" tabindex="0" aria-label="Page 2">2</a></li>
+            <li><a role="button" tabindex="0" aria-label="Page 3">3</a></li>
+            <li><a role="button" tabindex="0" aria-label="Page 4">4</a></li>
+            <li><a role="button" tabindex="0" aria-label="Page 5">5</a></li>
+            <!-- <li><a role="button" tabindex="0" aria-label="Page 6">6</a></li>
+            <li><a role="button" tabindex="0" aria-label="Page 7">7</a></li>
+            <li><a role="button" tabindex="0" aria-label="Page 8">8</a></li>
+            <li><a role="button" tabindex="0" aria-label="Page 9">9</a></li>
+            <li><a role="button" tabindex="0" aria-label="Page 10">10</a></li> -->
+            <li class="next">
+              <a
+                class=""
+                tabindex="0"
+                role="button"
+                aria-disabled="false"
+                aria-label="Next page"
+                rel="next"
+              >
+                <img
+                  src="/assets/img/next-page-btn.png"
+                  alt="페이지 다음 버튼"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="area-search">
+        <div></div>
+      </section>
+    </main>
+
+    <!-- Preloader -->
+    <!-- <div id="preloader"></div> -->
+
+    <!-- Vendor JS Files -->
+    <!-- <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+    <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
+    <!-- <script src="assets/vendor/aos/aos.js"></script> -->
+    <!-- <script src="assets/vendor/glightbox/js/glightbox.min.js"></script> -->
+    <!-- <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script> -->
+    <!-- <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script> -->
+    <!-- <script src="assets/vendor/swiper/swiper-bundle.min.js"></script> -->
+
+    <!-- Main JS File -->
+    <!-- <script src="assets/js/main.js"></script> -->
+  </body>
+</html>
