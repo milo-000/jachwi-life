@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>frag - 필터링</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <!-- 내가 추가함 -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <link href="assets/css/tmp.css" rel="stylesheet" />
+
+    <!-- =======================================================
+  * Template Name: Selecao
+  * Template URL: https://bootstrapmade.com/selecao-bootstrap-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+
+  <body class="">
+    <!-- <br /> -->
+    <!-- <br /> -->
+
+    <aside class="m-5 aside">
+      <!-- @@@@@@@ m 없애기 -->
+      <!-- <div class="filter"> -->
+      <div>
+        <h5>필터링 검색하기</h5>
+        <hr />
+      </div>
+
+      <form action="#" method="post">
+        <ul class="list-conditions">
+          <li>
+            지역
+            <br />
+
+            <div class="dropdown-group">
+              <div class="btn-group">
+                <button
+                  class="btn btn-outline-dark dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  대분류
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else</a></li>
+                </ul>
+              </div>
+
+              <div class="btn-group">
+                <button
+                  class="btn btn-outline-dark dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton2"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  disabled
+                >
+                  중분류
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="">
+            연령대
+            <br />
+            <div class="btn-group">
+              <input
+                type="checkbox"
+                class="btn-check"
+                name="age"
+                id="20s"
+                autocomplete="off"
+                value="20"
+              />
+              <label class="btn btn-outline-dark" for="20s">20대</label>
+              <input
+                type="checkbox"
+                class="btn-check"
+                name="age"
+                id="30s"
+                autocomplete="off"
+                value="30"
+              />
+              <label class="btn btn-outline-dark" for="30s">30대</label>
+              <input
+                type="checkbox"
+                class="btn-check"
+                name="age"
+                id="40s"
+                autocomplete="off"
+                value="40"
+              />
+              <label class="btn btn-outline-dark" for="40s">40대</label>
+              <input
+                type="checkbox"
+                class="btn-check"
+                name="age"
+                id="50s"
+                autocomplete="off"
+                value="50"
+              />
+              <label class="btn btn-outline-dark" for="50s">50대 이상</label>
+            </div>
+          </li>
+          <li>
+            활동 시간대
+            <br />
+            <div class="btn-group">
+              <input
+                type="radio"
+                class="btn-check"
+                name="nocturnal"
+                id="morning"
+                autocomplete="off"
+                value="N"
+                required
+              />
+              <label class="btn btn-outline-dark" for="morning">아침형</label>
+              <input
+                type="radio"
+                class="btn-check"
+                name="nocturnal"
+                id="evening"
+                autocomplete="off"
+                value="Y"
+              />
+              <label class="btn btn-outline-dark" for="evening">저녁형</label>
+              <input
+                type="radio"
+                class="btn-check"
+                name="nocturnal"
+                id="anything1"
+                autocomplete="off"
+                value="A"
+              />
+              <label class="btn btn-outline-dark" for="anything1"
+                >상관없어요</label
+              >
+            </div>
+          </li>
+
+          <li>
+            흡연 여부
+            <br />
+            <div class="btn-group">
+              <input
+                type="radio"
+                class="btn-check"
+                name="smoking"
+                id="not-smoke"
+                value="N"
+                required
+              />
+              <label class="btn btn-outline-dark" for="not-smoke"
+                >비흡연자</label
+              >
+              <input
+                type="radio"
+                class="btn-check"
+                name="smoking"
+                id="smoke"
+                value="Y"
+              />
+              <label class="btn btn-outline-dark" for="smoke">흡연자</label>
+              <input
+                type="radio"
+                class="btn-check"
+                name="smoking"
+                id="anything2"
+                value="A"
+              />
+              <label class="btn btn-outline-dark" for="anything2"
+                >상관없어요</label
+              >
+            </div>
+          </li>
+          <li>
+            소음 민감 여부
+            <br />
+            <div class="btn-group">
+              <input
+                type="radio"
+                class="btn-check"
+                name="noise"
+                id="not-sensitive"
+                value="N"
+                required
+              />
+              <label class="btn btn-outline-dark" for="not-sensitive"
+                >둔감한 편</label
+              >
+              <input
+                type="radio"
+                class="btn-check"
+                name="noise"
+                id="sensitive"
+                value="Y"
+              />
+              <label class="btn btn-outline-dark" for="sensitive"
+                >조금 예민한 편</label
+              >
+            </div>
+          </li>
+          <li>
+            청소 주기
+            <br />
+            <div class="dropdown-group-cleaning">
+              <div class="btn-group">
+                <button
+                  class="btn btn-outline-dark dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton3"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  주기
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                  <li><a class="dropdown-item" href="#">하루에</a></li>
+                  <li><a class="dropdown-item" href="#">주에</a></li>
+                  <li><a class="dropdown-item" href="#">달에</a></li>
+                </ul>
+              </div>
+              <div class="btn-group">
+                <button
+                  class="btn btn-outline-dark dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton4"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  횟수
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+                  <li><a class="dropdown-item" href="#">1번</a></li>
+                  <li><a class="dropdown-item" href="#">2번</a></li>
+                  <li><a class="dropdown-item" href="#">3번 이상</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            씻는 시간대
+            <br />
+            <div class="btn-group">
+              <input
+                type="radio"
+                class="btn-check"
+                name="shower"
+                id="at-morn"
+                value="M"
+                required
+              />
+              <label class="btn btn-outline-dark" for="at-morn">아침</label>
+              <input
+                type="radio"
+                class="btn-check"
+                name="shower"
+                id="at-even"
+                value="E"
+              />
+              <label class="btn btn-outline-dark" for="at-even">저녁</label>
+              <input
+                type="radio"
+                class="btn-check"
+                name="shower"
+                id="both"
+                value="B"
+              />
+              <label class="btn btn-outline-dark" for="both">둘 다</label>
+            </div>
+          </li>
+          <li>
+            반려동물
+            <br />
+            <div class="btn-group">
+              <input
+                type="radio"
+                class="btn-check"
+                name="pet"
+                id="no-pet"
+                value="N"
+                required
+              />
+              <label class="btn btn-outline-dark" for="no-pet">없음</label>
+              <input
+                type="radio"
+                class="btn-check"
+                name="pet"
+                id="has-pet"
+                value="Y"
+              />
+              <label class="btn btn-outline-dark" for="has-pet">있음</label>
+              <input
+                type="radio"
+                class="btn-check"
+                name="pet"
+                id="anything3"
+                value="A"
+              />
+              <label class="btn btn-outline-dark" for="anything3"
+                >상관없어요</label
+              >
+            </div>
+          </li>
+          <li>
+            잠버릇<br />
+            <div class="btn-group">
+              <input
+                type="checkbox"
+                class="btn-check"
+                id="habit-1"
+                name="sleeping_habits"
+                value="1"
+              />
+              <label class="btn btn-outline-dark" for="habit-1"
+                >코골이 제외</label
+              >
+              <input
+                type="checkbox"
+                class="btn-check"
+                id="habit-2"
+                name="sleeping_habits"
+                value="2"
+              />
+              <label class="btn btn-outline-dark" for="habit-2"
+                >이갈이 제외</label
+              >
+              <input
+                type="checkbox"
+                class="btn-check"
+                id="habit-3"
+                name="sleeping_habits"
+                value="3"
+              />
+              <label class="btn btn-outline-dark" for="habit-3"
+                >잠꼬대 제외</label
+              >
+            </div>
+          </li>
+        </ul>
+        <!-- </div> -->
+
+        <div class="submit">
+          <button class="default-btn">검색</button>
+          <button class="btn">@</button>
+        </div>
+      </form>
+    </aside>
+
+    <section></section>
+
+    <!-- Preloader -->
+    <!-- <div id="preloader"></div> -->
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
+    <!-- <script src="assets/vendor/aos/aos.js"></script> -->
+    <!-- <script src="assets/vendor/glightbox/js/glightbox.min.js"></script> -->
+    <!-- <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script> -->
+    <!-- <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script> -->
+    <!-- <script src="assets/vendor/swiper/swiper-bundle.min.js"></script> -->
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/tmp.js"></script>
+  </body>
+</html>

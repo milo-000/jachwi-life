@@ -53,19 +53,24 @@
 
   <body class="">
     <main class="m-5 main">
-      <section class="area-header">
+      <section class="rm-list-sec-header">
         <h4 class="">룸메이트 구인 게시판</h4>
-        <div>
-          <button class="btn btn-dark text-warning">채팅목록</button>
+        <hr />
+        <div hidden>
+          <!-- <button class="btn btn-dark text-warning">채팅목록</button>
           <button class="btn btn-dark text-warning">내 글</button>
-          <button class="btn btn-dark text-warning">글쓰기</button>
+          <button class="btn btn-dark text-warning">글쓰기</button> -->
+          <button class="btn-default-outline">채팅목록</button>
+          <button class="btn-default-outline">내 글</button>
+          <button class="btn-default-outline">글쓰기</button>
         </div>
       </section>
 
-      <section class="area-board">
+      <section class="rm-list-sec-board">
         <!-- @@@@@@@ m 없애기 -->
+        <span>104개 결과</span>
 
-        <table class="table table-hover text-center">
+        <table class="table-dark table-hover text-center">
           <!-- <thead>
             <tr>
               <th>번호</th>
@@ -87,7 +92,7 @@
 
             <tr role="button">
               <!-- <td>22</td> -->
-              <td>
+              <td class="cell-info">
                 <div class="infos">
                   <div>
                     <span>산본동</span>
@@ -105,13 +110,13 @@
                 </div>
                 <div>
                   <p class="info-detail">
-                    동래구 명륜동 | 30대 | 아침형 | 흡연X | 잠버릇X
+                    동래구 명륜동 / 30대 / 아침형 / 흡연X / 잠버릇X
                     <br />
-                    소음에 예민X | 하루 1회 청소 | 아침&저녁에 샤워 | 반려동물X
+                    소음에 예민X / 하루 1회 청소 / 아침&저녁에 샤워 / 반려동물X
                   </p>
                 </div>
               </td>
-              <td>
+              <td class="cell-profile">
                 <div>
                   <img
                     class="profile-img"
@@ -131,7 +136,7 @@
 
             <tr role="button">
               <!-- <td>9</td> -->
-              <td>
+              <td class="cell-info">
                 <div class="infos">
                   <div>
                     <span>명륜동</span>
@@ -147,13 +152,13 @@
                 <div>
                   <a href="/hollroom/roommate/detail"> 룸메이트 구해용 </a>
                   <p class="info-detail">
-                    동래구 명륜동 | 20대 | 저녁형 | 흡연O | 코골이&잠꼬대&이갈이
+                    동래구 명륜동 / 20대 / 저녁형 / 흡연O / 코골이&잠꼬대&이갈이
                     <br />
-                    소음에 약간 예민 | 주 2회 청소 | 아침에 샤워 | 반려동물X
+                    소음에 약간 예민 / 주 2회 청소 / 아침에 샤워 / 반려동물X
                   </p>
                 </div>
               </td>
-              <td>
+              <td class="cell-profile">
                 <div>
                   <img
                     class="profile-img"
@@ -234,6 +239,7 @@
                 aria-label="Next page"
                 rel="next"
               >
+                <!-- <span>&#5171;</span> -->
                 <img
                   src="/assets/img/next-page-btn.png"
                   alt="페이지 다음 버튼"
@@ -244,8 +250,22 @@
         </div>
       </section>
 
-      <section class="area-search">
-        <div></div>
+      <section class="rm-list-sec-search">
+        <form method="get">
+          <div>
+            <select name="category" id="">
+              <option value="title">제목</option>
+              <option value="content">내용</option>
+              <option value="both" selected>제목+내용</option>
+              <option value="nickname">닉네임</option>
+            </select>
+            <input type="text" />
+            <button type="submit">검색</button>
+            <!-- <div role="button"> -->
+            <!-- <a class="" href="#" onclick="javascript:alert('');">검색</a> -->
+            <!-- </div> -->
+          </div>
+        </form>
       </section>
     </main>
 
