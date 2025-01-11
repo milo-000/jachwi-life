@@ -66,331 +66,192 @@
       <form action="#" method="post">
         <ul class="list-conditions">
           <li>
-            지역
-            <br />
-
-            <div class="dropdown-group">
-              <div class="btn-group">
-                <button
-                  class="btn btn-outline-dark dropdown-toggle"
-                  type="button"
-                  id="dropdownMenuButton1"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  대분류
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else</a></li>
-                </ul>
-              </div>
-
-              <div class="btn-group">
-                <button
-                  class="btn btn-outline-dark dropdown-toggle"
-                  type="button"
-                  id="dropdownMenuButton2"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  disabled
-                >
-                  중분류
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else</a></li>
-                </ul>
-              </div>
+            <label for="div-region">지역</label>
+            <div id="div-region">
+              <select
+                name="sido"
+                id=""
+                onfocus="javascript:this.size=5;"
+                onblur="javascript:this.size=1;"
+                onchange="javascript:this.size=1; javascript:this.blur();"
+              >
+                <option value="" selected disabled>시/도</option>
+                <option value="서울시">서울시</option>
+                <option value="인천시">인천시</option>
+                <option value="대전시">대전시</option>
+                <option value="광주시">광주시</option>
+                <option value="대구시">대구시</option>
+                <option value="울산시">울산시</option>
+                <option value="부산시">부산시</option>
+              </select>
+              <select
+                name="sigungu"
+                id=""
+                onfocus="javascript:this.size=5;"
+                onblur="javascript:this.size=1;"
+                onchange="javascript:this.size=1; javascript:this.blur();"
+              >
+                <option value="" selected disabled>시/군/구</option>
+                <option value="종로구">종로구</option>
+                <option value="종로구">종로구</option>
+                <option value="중구">중구</option>
+                <option value="용산구">용산구</option>
+                <option value="성동구">성동구</option>
+                <option value="광진구">광진구</option>
+                <option value="동대문구">동대문구</option>
+                <option value="중랑구">중랑구</option>
+              </select>
+              <select
+                name="eupmyeondong"
+                id=""
+                onfocus="javascript:this.size=5;"
+                onblur="javascript:this.size=1;"
+                onchange="javascript:this.size=1; javascript:this.blur();"
+              >
+                <option value="" selected disabled>읍/면/동</option>
+                <option value="청운동">청운동</option>
+                <option value="청운동">청운동</option>
+                <option value="신교동">신교동</option>
+                <option value="궁정동">궁정동</option>
+                <option value="효자동">효자동</option>
+                <option value="창성동">창성동</option>
+                <option value="통의동">통의동</option>
+                <option value="적선동">적선동</option>
+              </select>
             </div>
           </li>
 
           <li class="">
-            연령대
-            <br />
-            <div class="btn-group">
-              <input
-                type="checkbox"
-                class="btn-check"
-                name="age"
-                id="20s"
-                autocomplete="off"
-                value="20"
-              />
-              <label class="btn btn-outline-dark" for="20s">20대</label>
-              <input
-                type="checkbox"
-                class="btn-check"
-                name="age"
-                id="30s"
-                autocomplete="off"
-                value="30"
-              />
-              <label class="btn btn-outline-dark" for="30s">30대</label>
-              <input
-                type="checkbox"
-                class="btn-check"
-                name="age"
-                id="40s"
-                autocomplete="off"
-                value="40"
-              />
-              <label class="btn btn-outline-dark" for="40s">40대</label>
-              <input
-                type="checkbox"
-                class="btn-check"
-                name="age"
-                id="50s"
-                autocomplete="off"
-                value="50"
-              />
-              <label class="btn btn-outline-dark" for="50s">50대 이상</label>
-            </div>
-          </li>
-          <li>
-            활동 시간대
-            <br />
-            <div class="btn-group">
-              <input
-                type="radio"
-                class="btn-check"
-                name="nocturnal"
-                id="morning"
-                autocomplete="off"
-                value="N"
-                required
-              />
-              <label class="btn btn-outline-dark" for="morning">아침형</label>
-              <input
-                type="radio"
-                class="btn-check"
-                name="nocturnal"
-                id="evening"
-                autocomplete="off"
-                value="Y"
-              />
-              <label class="btn btn-outline-dark" for="evening">저녁형</label>
-              <input
-                type="radio"
-                class="btn-check"
-                name="nocturnal"
-                id="anything1"
-                autocomplete="off"
-                value="A"
-              />
-              <label class="btn btn-outline-dark" for="anything1"
-                >상관없어요</label
-              >
+            <label for="div-age">연령대</label>
+            <div id="div-age">
+              <input type="checkbox" name="" id="20s" name="age" value="20" />
+              <label for="20s">20대</label>
+              <input type="checkbox" name="" id="30s" name="age" value="30" />
+              <label for="30s">30대</label>
+              <input type="checkbox" name="" id="40s" name="age" value="40" />
+              <label for="40s">40대</label>
+              <input type="checkbox" name="" id="50s" name="age" value="50" />
+              <label for="50s">50대 이상</label>
             </div>
           </li>
 
           <li>
-            흡연 여부
-            <br />
-            <div class="btn-group">
+            <label for="div-active">활동 시간대</label>
+            <div id="div-active">
               <input
                 type="radio"
-                class="btn-check"
-                name="smoking"
-                id="not-smoke"
-                value="N"
-                required
-              />
-              <label class="btn btn-outline-dark" for="not-smoke"
-                >비흡연자</label
-              >
-              <input
-                type="radio"
-                class="btn-check"
-                name="smoking"
-                id="smoke"
-                value="Y"
-              />
-              <label class="btn btn-outline-dark" for="smoke">흡연자</label>
-              <input
-                type="radio"
-                class="btn-check"
-                name="smoking"
-                id="anything2"
-                value="A"
-              />
-              <label class="btn btn-outline-dark" for="anything2"
-                >상관없어요</label
-              >
-            </div>
-          </li>
-          <li>
-            소음 민감 여부
-            <br />
-            <div class="btn-group">
-              <input
-                type="radio"
-                class="btn-check"
-                name="noise"
-                id="not-sensitive"
-                value="N"
-                required
-              />
-              <label class="btn btn-outline-dark" for="not-sensitive"
-                >둔감한 편</label
-              >
-              <input
-                type="radio"
-                class="btn-check"
-                name="noise"
-                id="sensitive"
-                value="Y"
-              />
-              <label class="btn btn-outline-dark" for="sensitive"
-                >조금 예민한 편</label
-              >
-            </div>
-          </li>
-          <li>
-            청소 주기
-            <br />
-            <div class="dropdown-group-cleaning">
-              <div class="btn-group">
-                <button
-                  class="btn btn-outline-dark dropdown-toggle"
-                  type="button"
-                  id="dropdownMenuButton3"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  주기
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
-                  <li><a class="dropdown-item" href="#">하루에</a></li>
-                  <li><a class="dropdown-item" href="#">주에</a></li>
-                  <li><a class="dropdown-item" href="#">달에</a></li>
-                </ul>
-              </div>
-              <div class="btn-group">
-                <button
-                  class="btn btn-outline-dark dropdown-toggle"
-                  type="button"
-                  id="dropdownMenuButton4"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  횟수
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
-                  <li><a class="dropdown-item" href="#">1번</a></li>
-                  <li><a class="dropdown-item" href="#">2번</a></li>
-                  <li><a class="dropdown-item" href="#">3번 이상</a></li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li>
-            씻는 시간대
-            <br />
-            <div class="btn-group">
-              <input
-                type="radio"
-                class="btn-check"
-                name="shower"
-                id="at-morn"
+                id="morning"
+                name="active-at"
                 value="M"
                 required
               />
-              <label class="btn btn-outline-dark" for="at-morn">아침</label>
-              <input
-                type="radio"
-                class="btn-check"
-                name="shower"
-                id="at-even"
-                value="E"
-              />
-              <label class="btn btn-outline-dark" for="at-even">저녁</label>
-              <input
-                type="radio"
-                class="btn-check"
-                name="shower"
-                id="both"
-                value="B"
-              />
-              <label class="btn btn-outline-dark" for="both">둘 다</label>
+              <label for="morning">아침형</label>
+              <input type="radio" id="evening" name="active-at" value="E" />
+              <label for="evening">저녁형</label>
+              <input type="radio" id="anytime" name="active-at" value="A" />
+              <label for="anytime">상관없음</label>
             </div>
           </li>
+
           <li>
-            반려동물
-            <br />
-            <div class="btn-group">
+            <label for="div-smoke">흡연 여부</label>
+            <div id="div-smoke">
               <input
                 type="radio"
-                class="btn-check"
-                name="pet"
-                id="no-pet"
-                value="N"
+                id="smoke"
+                name="smoking"
+                value="T"
                 required
               />
-              <label class="btn btn-outline-dark" for="no-pet">없음</label>
-              <input
-                type="radio"
-                class="btn-check"
-                name="pet"
-                id="has-pet"
-                value="Y"
-              />
-              <label class="btn btn-outline-dark" for="has-pet">있음</label>
-              <input
-                type="radio"
-                class="btn-check"
-                name="pet"
-                id="anything3"
-                value="A"
-              />
-              <label class="btn btn-outline-dark" for="anything3"
-                >상관없어요</label
-              >
+              <label for="smoke">흡연자</label>
+              <input type="radio" id="not-smoke" name="smoking" value="F" />
+              <label for="not-smoke">비흡연자</label>
+              <input type="radio" id="anything" name="smoking" value="A" />
+              <label for="anything">상관없음</label>
             </div>
           </li>
+
           <li>
-            잠버릇<br />
-            <div class="btn-group">
+            <label for="div-noise">소음 민감 여부</label>
+            <div id="div-noise">
               <input
-                type="checkbox"
-                class="btn-check"
-                id="habit-1"
-                name="sleeping_habits"
-                value="1"
+                type="radio"
+                id="sensitive"
+                name="noise"
+                value="S"
+                required
               />
-              <label class="btn btn-outline-dark" for="habit-1"
-                >코골이 제외</label
-              >
+              <label for="sensitive">둔감한 편</label>
+              <input type="radio" id="not-sensitive" name="noise" value="N" />
+              <label for="not-sensitive">조금 예민한 편</label>
+            </div>
+          </li>
+
+          <li>
+            <label for="div-cleaning">청소 주기</label>
+            <div id="div-cleaning">
+              <select name="cycle" id="">
+                <option value="" selected disabled>주기</option>
+                <option value="day">하루에</option>
+                <option value="week">주에</option>
+                <option value="month">달에</option>
+              </select>
+              <select name="number" id="">
+                <option value="" selected disabled>횟수</option>
+                <option value="1">1번</option>
+                <option value="2">2번</option>
+                <option value="3">3번 이상</option>
+              </select>
+            </div>
+          </li>
+
+          <li>
+            <label for="div-shower">씻는 시간대</label>
+            <div id="div-shower">
               <input
-                type="checkbox"
-                class="btn-check"
-                id="habit-2"
-                name="sleeping_habits"
-                value="2"
+                type="radio"
+                id="at-morning"
+                name="shower"
+                value="M"
+                required
               />
-              <label class="btn btn-outline-dark" for="habit-2"
-                >이갈이 제외</label
-              >
-              <input
-                type="checkbox"
-                class="btn-check"
-                id="habit-3"
-                name="sleeping_habits"
-                value="3"
-              />
-              <label class="btn btn-outline-dark" for="habit-3"
-                >잠꼬대 제외</label
-              >
+              <label for="at-morning">아침</label>
+              <input type="radio" id="at-evening" name="shower" value="E" />
+              <label for="at-evening">저녁</label>
+              <input type="radio" id="at-anytime" name="shower" value="B" />
+              <label for="at-anytime">둘 다</label>
+            </div>
+          </li>
+
+          <li>
+            <label for="div-pet">반려동물</label>
+            <div id="div-pet">
+              <input type="radio" id="has-pet" name="pet" value="T" required />
+              <label for="has-pet">있음</label>
+              <input type="radio" id="no-pet" name="pet" value="F" />
+              <label for="no-pet">없음</label>
+              <input type="radio" id="pet-anything" name="pet" value="A" />
+              <label for="pet-anything">상관없음</label>
+            </div>
+          </li>
+
+          <li>
+            <label for="div-habit">잠버릇</label>
+            <div id="div-habit">
+              <input type="checkbox" name="sleeping_habit" id="snoring" />
+              <label for="snoring">코골이 제외</label>
+              <input type="checkbox" name="sleeping_habit" id="grinding" />
+              <label for="grinding">이갈이 제외</label>
+              <input type="checkbox" name="sleeping_habit" id="talking" />
+              <label for="talking">잠꼬대 제외</label>
             </div>
           </li>
         </ul>
-        <!-- </div> -->
 
         <div class="submit">
-          <button class="default-btn">검색</button>
-          <button class="btn">@</button>
+          <!-- <button class="default-btn">검색</button> -->
+          <button type="submit" class="btn-default">검색</button>
+          <button class="btn text-danger">@</button>
         </div>
       </form>
     </aside>

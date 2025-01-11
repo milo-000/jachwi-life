@@ -1,0 +1,323 @@
+/* :root {
+  --bs-yellow: #ffc107;
+} */
+
+.rbd {
+  border: 1px solid red;
+}
+.obd {
+  border: 1px solid orange;
+}
+.bbd {
+  border: 1px solid blue;
+}
+
+.aside,
+.main {
+  background-color: var(--surface-color);
+  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+  /* padding: 60px 30px 60px 70px; */
+  /* transition: all ease-in-out 0.3s; */
+  border-radius: 18px;
+  /* height: 100%; */
+  /* position: relative; */
+  /* overflow: hidden; */
+
+  width: fit-content;
+  /* height: fit-content; */
+  padding: 3rem;
+}
+
+/*****************/
+/***** aside *****/
+/*****************/
+
+.aside form .list-conditions {
+  /* border: 1px solid blue; */
+
+  /* display: block; */
+  width: fit-content;
+  /* list-style-type: none; */
+  padding-left: 0;
+  margin-bottom: 2.5rem;
+}
+
+.aside form .list-conditions li {
+  /* display: inline-block; */
+  /* border: 1px solid orange; */
+
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.aside form .submit {
+  /* border: 1px solid blue; */
+  display: flex;
+  /* display: inline-block; */
+  /* align-items: center; */
+  /* align-self: center; */
+  justify-content: center;
+  /* margin: auto; */
+}
+
+.aside form .submit button {
+  /* border: 1px solid orange; */
+}
+
+.aside .list-conditions .dropdown-group {
+  /* border: 1px solid red; */
+}
+
+.aside .list-conditions .dropdown-menu li {
+  /* border: 1px solid blue; */
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.aside .list-conditions .dropdown-menu li a:hover {
+  color: var(--bs-yellow);
+}
+
+/* .dropdown-menu li, */
+.aside .list-conditions .dropdown-menu a {
+  /* border: 1px solid red; */
+  /* color: red; */
+  /* margin-top: 0; */
+  /* margin-bottom: 0; */
+  /* padding-top: 0; */
+  /* padding-bottom: 0; */
+  /* line-height: 1; */
+}
+
+/****************/
+/***** main *****/
+/****************/
+
+.area-header {
+  display: flex;
+  /* -webkit-box-pack: justify; */
+  justify-content: space-between;
+  padding: 0;
+}
+
+.area-header h4 {
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+.area-board {
+  padding: 2.5rem 0 0 0;
+}
+
+.area-board table thead th {
+  /* color: rgb(177, 177, 177); */
+  /* color: rgb(80, 80, 80); */
+  font-weight: normal;
+}
+
+/* table tbody { */
+/* margin: 1rem 0; */
+/* } */
+
+table tbody tr:last-child {
+  /* border-bottom: transparent; */
+}
+
+.area-board table tbody tr td {
+  width: fit-content;
+  /* padding-left: 1.5rem; */
+  /* padding-right: 1.5rem; */
+  /* margin-bottom: 0; */
+  padding: 1.7rem 1.5rem;
+  vertical-align: middle;
+  /* margin: auto 0; */
+  /* display: flex; */
+  /* line-height: 100%; */
+  /* text-align: center; */
+}
+
+.area-board table tbody tr td:nth-child(1) {
+  /* color: rgb(73, 73, 73); */
+}
+
+.area-board table tbody tr td:nth-child(1) {
+  /* width: 10%; */
+  text-align: left;
+}
+
+.area-board table tbody tr td:nth-child(3) {
+  /* padding-top: 0.9rem; */
+  /* display: flex; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+}
+
+.area-board table tbody tr td:nth-child(2) div {
+  /* border: 1px solid blue; */
+  padding-top: 0.5rem;
+}
+
+.area-board table tbody tr td:nth-child(2) * {
+  margin: 0 auto;
+}
+
+/* .area-board table tbody tr td:nth-child(2) span { */
+table .cell-profile span {
+  /* margin-right: 0.3rem; */
+  font-size: 0.9rem;
+  color: var(--bs-gray-700);
+}
+
+.area-board table tbody tr td a {
+  text-decoration: none;
+  /* color: #000000; */
+  color: var(--bs-gray-700);
+  font-size: 1.2rem;
+  font-weight: 500;
+  /* font-weight: 600; */
+  display: block;
+  margin: 0.5rem 0;
+  /* padding: 2rem 0; */
+}
+
+.area-board table tbody tr td .info-detail {
+  font-size: 0.85rem;
+  /* color: rgb(177, 177, 177); */
+  color: var(--bs-gray-500);
+  margin-bottom: 0;
+}
+
+.area-board table tbody .profile-img {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: block;
+  /* margin-top: 5rem; */
+  /* padding-top: 0.3rem; */
+}
+
+.area-board table tbody span {
+  /* display: inline-block; */
+  /* vertical-align: bottom; */
+  /* padding: 0; */
+  /* padding-bottom: 0; */
+  /* margin-top: 0.5rem; */
+  /* margin-bottom: 0; */
+}
+
+/* .area-board table tbody tr td:nth-child(3) span { */
+/* display: block; */
+/* } */
+
+table tbody td .infos {
+  display: flex;
+  /* align-items: stretch; */
+  justify-content: space-between;
+  color: var(--bs-gray-500);
+  font-size: 0.9rem;
+}
+
+table tbody td .infos div {
+  display: inline-block;
+}
+
+/* .area-board .pagination { */
+/* margin-bottom: 0; */
+/* border: 1px solid blue; */
+/* } */
+
+.area-board .pagination {
+  /* margin-bottom: 20rem; */
+  /* margin: 0 auto; */
+  /* padding: 0; */
+  margin: 0 0 1rem 0;
+}
+
+.area-board .pagination ul {
+  list-style-type: none;
+  display: flex;
+  margin: 2rem auto 2rem auto;
+  padding: 0;
+  /* flex-direction: row; */
+  /* -webkit-box-pack: center; */
+  /* justify-content: center; */
+  /* -webkit-box-align: center; */
+  /* align-items: center; */
+}
+
+.pagination ul li {
+  margin-left: 0.5rem;
+}
+
+.area-board .pagination ul a {
+  color: rgb(177, 177, 177);
+  font-size: 1.07rem;
+}
+
+.main .area-board .pagination ul li a.selected {
+  color: var(--bs-yellow) !important;
+  /* cursor: default; */
+  pointer-events: none;
+}
+
+.area-board .pagination ul li img {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.area-search {
+  padding: 0;
+}
+
+.area-search div {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.area-search select {
+  /* appearance: none; */
+  /* margin-top: 0; */
+  /* margin-bottom: 0; */
+  height: 2rem;
+  /* margin: 0 0.3rem 0 0; */
+  margin-right: 0.3rem;
+  padding: 0.35rem;
+  border-radius: 0.3rem;
+  border-color: var(--bs-gray-500);
+  outline: none;
+  font-size: 0.8rem;
+  color: var(--bs-gray-700);
+}
+
+.area-search div select option:hover {
+  /* background-color: var(--bs-yellow); */
+  /* appearance: none; */
+}
+
+.area-search input {
+  /* margin-top: 0; */
+  /* margin-bottom: 0; */
+  height: 2rem;
+  /* margin: 0 0.3rem 0 0; */
+  margin-right: 0.3rem;
+  border-radius: 0.3rem;
+  border: 1px solid var(--bs-gray-500);
+}
+
+.area-search button {
+  /* vertical-align: middle; */
+  height: 2rem;
+  /* margin: auto 0; */
+  margin: 0;
+  padding: 0.35rem;
+  /* padding: 0 0.5rem; */
+  border-radius: 0.3rem;
+  border: 1px solid var(--bs-gray-500);
+  font-size: 0.9rem;
+  color: var(--bs-gray-700);
+  /* cursor: pointer; */
+}

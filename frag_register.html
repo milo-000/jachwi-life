@@ -53,264 +53,292 @@
 
   <body class="">
     <main class="m-5 main">
-      <!-- <section class="">
-        <div class="header">
-          <h3 class="">모집글 작성</h3>
-          <hr />
-        </div>
-        <form action="">
-          <div class="inputs"></div>
-          <div class="btns"></div>
-        </form>
-      </section> -->
+      <section class="rm-rgster-sec-header">
+        <h3 class="">모집글 작성</h3>
+        <hr class="" />
+      </section>
 
-      <h3 class="">모집글 작성</h3>
-      <hr class="" />
-      <form id="" method="post">
-        <div class="inputs">
-          <ul id="write-ul-1">
-            <li>활동 시간대<span class="text-primary">*</span></li>
-            <li>
-              <label>기상 시간대<span class="text-primary">*</span></label>
-            </li>
-            <li>
-              <label>취침 시간대<span class="text-primary">*</span></label>
-            </li>
-            <li>
-              <div>기상 알람 개수</div>
-            </li>
-            <li>흡연 여부<span class="text-primary">*</span></li>
-            <li>반려동물<span class="text-primary">*</span></li>
-            <li>잠버릇<span class="text-primary">*</span></li>
-            <li>방 청소 주기</li>
-            <li>소음에 민감한 정도</li>
-          </ul>
-          <ul>
-            <li>
-              <div>
-                <input type="radio" id="morning" name="nocturnal" value="N" />
-                <label for="morning" class="form-check-label"> 아침형 </label
-                >&nbsp;&nbsp;
-                <input type="radio" id="evening" name="nocturnal" value="Y" />
-                <label for="evening" class="form-check-label"> 저녁형 </label>
-              </div>
-            </li>
-            <li>
-              <div>
-                <select id="wakeup-from" class="my-select rounded-2">
-                  <option value="">-</option>
-                  <option value="">00</option>
-                  <option value="">01</option>
-                  <option value="">02</option>
-                  <option value="">03</option>
-                  <option value="">04</option>
-                  <option value="">23</option>
-                </select>
-                <span>시에서&nbsp;</span>
-                <select id="wakeup-to" class="my-select rounded-2">
-                  <option value="">-</option>
-                  <option value="">00</option>
-                  <option value="">01</option>
-                  <option value="">02</option>
-                  <option value="">03</option>
-                  <option value="">04</option>
-                  <option value="">23</option>
-                </select>
-                <span>시 사이</span>
-                <input type="text" id="wakeup-at" name="wakeup_at" hidden />
-              </div>
-            </li>
-            <li>
-              <div>
-                <select id="sleep-from" class="my-select rounded-2" size="1">
-                  <option value="">-</option>
-                  <option value="">00</option>
-                  <option value="">01</option>
-                  <option value="">02</option>
-                  <option value="">03</option>
-                  <option value="">04</option>
-                  <option value="">23</option>
-                </select>
-                <span>시에서&nbsp;</span>
-                <select id="sleep-to" class="my-select rounded-2" size="1">
-                  <option value="">-</option>
-                  <option value="">00</option>
-                  <option value="">01</option>
-                  <option value="">02</option>
-                  <option value="">03</option>
-                  <option value="">04</option>
-                  <option value="">23</option>
-                </select>
-                <span>시 사이</span>
-                <input type="text" id="sleep-at" name="sleep_at" hidden />
-              </div>
-            </li>
-            <li>
-              <div>
-                <input
-                  type="number"
-                  id="alarm"
-                  name="alarm"
-                  class="my-input-s"
-                  size="2"
-                  min="0"
-                />
-                <span>개</span>
-              </div>
-            </li>
-            <li>
-              <div>
-                <input
-                  type="radio"
-                  id="notsmoke"
-                  name="smoking"
-                  value="N"
-                  required
-                />
-                <label for="notsmoke" class="form-check-label">비흡연자</label
-                >&nbsp;
-                <input
-                  type="radio"
-                  id="smoke"
-                  name="smoking"
-                  value="Y"
-                  required
-                />
-                <label for="smoke" class="form-check-label">흡연자</label>
-              </div>
-            </li>
-            <li>
-              <div>
-                <input type="radio" id="no-pet" name="pet" value="N" required />
-                <label for="no-pet" class="form-check-label">없음</label>&nbsp;
-                <input
-                  type="radio"
-                  id="has-pet"
-                  name="pet"
-                  value="Y"
-                  required
-                />
-                <label for="has-pet" class="form-check-label">있음</label>
-              </div>
-            </li>
-            <li>
-              <div>
-                <input
-                  type="checkbox"
-                  id="habit-1"
-                  name="sleeping_habits"
-                  value="1"
-                />
-                <label for="habit-1">코골이</label>&nbsp;&nbsp;
-                <input
-                  type="checkbox"
-                  id="habit-2"
-                  name="sleeping_habits"
-                  value="2"
-                />
-                <label for="habit-2">이갈이</label>&nbsp;&nbsp;
-                <input
-                  type="checkbox"
-                  id="habit-3"
-                  name="sleeping_habits"
-                  value="3"
-                />
-                <label for="habit-3">잠꼬대</label>&nbsp;&nbsp;
-                <input
-                  type="checkbox"
-                  id="habit-4"
-                  name="sleeping_habits"
-                  value="0"
-                />
-                <label for="habit-4">잠버릇 없음</label>
-              </div>
-            </li>
-            <li>
-              <div>
-                <button
-                  type="button"
-                  id="btn-change-txt"
-                  class="my-btn btn btn-sm btn-outline-primary"
-                >
-                  하루
-                </button>
-                <span>&nbsp;에&nbsp;</span>
-                <input
-                  type="number"
-                  id="cleaning"
-                  size="1"
-                  class="my-input-s"
-                />
-                <span>번</span>
-                <input
-                  type="text"
-                  id="cleaning-cycle"
-                  name="cleaning_cycle"
-                  hidden
-                />
-              </div>
-            </li>
-            <li>
-              <div class="">
-                <input
-                  class=""
-                  name="noise"
-                  type="radio"
-                  id="sensitive-2"
-                  value="2"
-                />
-                <label class="" for="sensitive-2">민감한 편이다</label
-                >&nbsp;&nbsp;
-                <input
-                  class=""
-                  name="noise"
-                  type="radio"
-                  id="sensitive-1"
-                  value="1"
-                />
-                <label class="" for="sensitive-1">약간 신경쓴다</label
-                >&nbsp;&nbsp;
-                <input
-                  class=""
-                  name="noise"
-                  type="radio"
-                  id="sensitive-0"
-                  value="0"
-                />
-                <label class="" for="sensitive-0">둔감하다</label>&nbsp;&nbsp;
-              </div>
-            </li>
-          </ul>
-        </div>
-        <hr class="mb-5" />
-        <div class="d-flex flex-column align-items-center">
-          <input
-            id="title"
-            type="text"
-            name="title"
-            size="60"
-            class="my-input-title"
-            placeholder="제목을 작성해주세요"
-            required
-          />
-          <textarea
-            id="content"
-            name="content"
-            class="mt-3 main-text"
-            maxlength="1000"
-            placeholder="본문을 1000자 이내로 작성해주세요"
-            required
-          ></textarea>
-        </div>
-        <div class="mt-4 d-flex justify-content-center">
-          <button type="button" class="btn btn-outline-danger">
-            뒤로 가기
-          </button>
-          <button type="submit" class="ml-3 btn btn-outline-primary">
-            올리기
-          </button>
-        </div>
-      </form>
+      <section class="rm-rgster-sec-form">
+        <form id="" action="" method="post">
+          <div class="inputs">
+            <ul id="">
+              <li>활동 시간대<span class="text-accent">*</span></li>
+              <li>
+                <label>기상 시간대<span class="text-accent">*</span></label>
+              </li>
+              <li>
+                <label>취침 시간대<span class="text-accent">*</span></label>
+              </li>
+              <li>
+                <div>기상 알람 개수</div>
+              </li>
+              <li>흡연 여부<span class="text-accent">*</span></li>
+              <li>반려동물<span class="text-accent">*</span></li>
+              <li>잠버릇<span class="text-accent">*</span></li>
+              <li>방 청소 주기</li>
+              <li>소음에 민감한 정도</li>
+            </ul>
+            <div></div>
+            <ul>
+              <li>
+                <div>
+                  <input type="radio" id="morning" name="nocturnal" value="N" />
+                  <label for="morning" class="form-check-label"> 아침형 </label
+                  >&nbsp;&nbsp;
+                  <input type="radio" id="evening" name="nocturnal" value="Y" />
+                  <label for="evening" class="form-check-label"> 저녁형 </label>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <select id="wakeup-from" class="" size="1">
+                    <option value="">-</option>
+                    <option value="">00</option>
+                    <option value="">01</option>
+                    <option value="">02</option>
+                    <option value="">03</option>
+                    <option value="">04</option>
+                    <option value="">23</option>
+                  </select>
+                  <span>시에서&nbsp;</span>
+                  <select id="wakeup-to" class="" size="1">
+                    <option value="">-</option>
+                    <option value="">00</option>
+                    <option value="">01</option>
+                    <option value="">02</option>
+                    <option value="">03</option>
+                    <option value="">04</option>
+                    <option value="">23</option>
+                  </select>
+                  <span>시 사이</span>
+                  <input type="text" id="wakeup-at" name="wakeup_at" hidden />
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <select id="sleep-from" class="" size="1">
+                    <option value="">-</option>
+                    <option value="">00</option>
+                    <option value="">01</option>
+                    <option value="">02</option>
+                    <option value="">03</option>
+                    <option value="">04</option>
+                    <option value="">23</option>
+                  </select>
+                  <span>시에서&nbsp;</span>
+                  <select id="sleep-to" class="" size="1">
+                    <option value="">-</option>
+                    <option value="">00</option>
+                    <option value="">01</option>
+                    <option value="">02</option>
+                    <option value="">03</option>
+                    <option value="">04</option>
+                    <option value="">23</option>
+                  </select>
+                  <span>시 사이</span>
+                  <input type="text" id="sleep-at" name="sleep_at" hidden />
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <input
+                    type="number"
+                    id="alarm"
+                    name="alarm"
+                    class=""
+                    size="2"
+                    min="0"
+                  />
+                  <span>개</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <input
+                    type="radio"
+                    id="notsmoke"
+                    name="smoking"
+                    value="N"
+                    required
+                  />
+                  <label for="notsmoke" class="form-check-label">비흡연자</label
+                  >&nbsp;
+                  <input
+                    type="radio"
+                    id="smoke"
+                    name="smoking"
+                    value="Y"
+                    required
+                  />
+                  <label for="smoke" class="form-check-label">흡연자</label>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <input
+                    type="radio"
+                    id="no-pet"
+                    name="pet"
+                    value="N"
+                    required
+                  />
+                  <label for="no-pet" class="form-check-label">없음</label
+                  >&nbsp;
+                  <input
+                    type="radio"
+                    id="has-pet"
+                    name="pet"
+                    value="Y"
+                    required
+                  />
+                  <label for="has-pet" class="form-check-label">있음</label>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <input
+                    type="checkbox"
+                    id="habit-1"
+                    name="sleeping_habits"
+                    value="1"
+                  />
+                  <label for="habit-1">코골이</label>&nbsp;&nbsp;
+                  <input
+                    type="checkbox"
+                    id="habit-2"
+                    name="sleeping_habits"
+                    value="2"
+                  />
+                  <label for="habit-2">이갈이</label>&nbsp;&nbsp;
+                  <input
+                    type="checkbox"
+                    id="habit-3"
+                    name="sleeping_habits"
+                    value="3"
+                  />
+                  <label for="habit-3">잠꼬대</label>&nbsp;&nbsp;
+                  <input
+                    type="checkbox"
+                    id="habit-4"
+                    name="sleeping_habits"
+                    value="0"
+                  />
+                  <label for="habit-4">잠버릇 없음</label>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <input
+                    type="radio"
+                    id="aaa"
+                    name="tmp-cleaning"
+                    value="D"
+                    required
+                  />
+                  <label for="aaa" class="">하루에</label>&nbsp;
+                  <input
+                    type="radio"
+                    id="bbb"
+                    name="tmp-cleaning"
+                    value="W"
+                    required
+                  />
+                  <label for="bbb" class="">주에</label>&nbsp;
+                  <input
+                    type="radio"
+                    id="ccc"
+                    name="tmp-cleaning"
+                    value="M"
+                    required
+                  />
+                  <label for="ccc" class="">달에</label>
+                  <span>&nbsp;</span>
+                  <input
+                    type="number"
+                    id="cleaning"
+                    size="1"
+                    class="my-input-s"
+                  />
+                  <span>번</span>
+                  <input
+                    type="text"
+                    id="cleaning-cycle"
+                    name="cleaning_cycle"
+                    hidden
+                  />
+                </div>
+              </li>
+              <li>
+                <div class="">
+                  <input
+                    class=""
+                    name="noise"
+                    type="radio"
+                    id="sensitive-2"
+                    value="2"
+                  />
+                  <label class="" for="sensitive-2">민감한 편이다</label
+                  >&nbsp;&nbsp;
+                  <input
+                    class=""
+                    name="noise"
+                    type="radio"
+                    id="sensitive-1"
+                    value="1"
+                  />
+                  <label class="" for="sensitive-1">약간 신경쓴다</label
+                  >&nbsp;&nbsp;
+                  <input
+                    class=""
+                    name="noise"
+                    type="radio"
+                    id="sensitive-0"
+                    value="0"
+                  />
+                  <label class="" for="sensitive-0">둔감하다</label>&nbsp;&nbsp;
+                </div>
+              </li>
+            </ul>
+          </div>
+          <hr class="" />
+          <div class="contents">
+            <input
+              id=""
+              type="text"
+              name=""
+              size="60"
+              class=""
+              placeholder="제목을 작성해주세요"
+              required
+            />
+            <textarea
+              id=""
+              name=""
+              class=""
+              maxlength="1000"
+              placeholder="본문을 1000자 이내로 작성해주세요"
+              required
+            ></textarea>
+          </div>
+          <!-- <div class="btns mt-4 d-flex justify-content-center">
+            <button type="button" class="btn btn-outline-danger">
+              뒤로 가기
+            </button>
+            <button type="submit" class="ml-3 btn btn-outline-primary">
+              올리기
+            </button>
+          </div> -->
+          <div class="rgster-btns">
+            <button type="button" class="btn-default-outline-m">
+              뒤로 가기
+            </button>
+            <button type="submit" class="btn-default-m">올리기</button>
+          </div>
+        </form>
+      </section>
     </main>
 
     <!-- Preloader -->
